@@ -3,7 +3,10 @@ import LandingPage from './components/LandingPage/LandingPage';
 
 function App() {
   return (
-    <LandingPage/>
+      <>
+        <h2 style={{textAlign: "center"}}>Ryan Jentzsch's Profile</h2>
+        <LandingPage/>
+      </>
   );
 }
 
