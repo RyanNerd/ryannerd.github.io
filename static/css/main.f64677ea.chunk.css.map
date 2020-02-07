@@ -1,1 +1,0 @@
-{"version":3,"sources":["tab_content.css"],"names":[],"mappings":"AAAA,aACI,eAAgB,CAChB,gBAAiB,CACjB,gBACJ","file":"main.f64677ea.chunk.css","sourcesContent":[".tab-content {\n    margin-top: 25px;\n    margin-left: 35px;\n    margin-right: 10%;\n}\n"]}
