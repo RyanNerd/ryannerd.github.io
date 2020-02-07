@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
-import Card from "react-bootstrap/Card";
-import ListGroup from "react-bootstrap/ListGroup";
 import TabContent from "../../styles/tab_content.css";
+import AboutPage from "../About/AboutPage";
+import ContributionsPage from "../Contributions/ContributionsPage";
 
 function LandingPage() {
     const [ activeTabKey, setActiveTabKey ] = useState('about');
@@ -19,25 +19,29 @@ function LandingPage() {
                 eventKey="about"
                 title="About"
             >
-                <Card style={{ width: '30rem' }}>
-                    <Card.Header>About Ryan Jentzsch</Card.Header>
-                    <ListGroup variant="flush">
-                        <ListGroup.Item>Over 25 years experience in IT</ListGroup.Item>
-                        <ListGroup.Item>Experience with most mainstream languages</ListGroup.Item>
-                    </ListGroup>
-                </Card>
+                <AboutPage/>
             </Tab>
+
             <Tab className={TabContent}
                 eventKey="contributions"
                 title="Contributions">
-                <Card style={{ width: '18rem' }}>
-                    <Card.Header>Contributions</Card.Header>
-                    <ListGroup variant="flush" active>
-                        <ListGroup.Item>Willow Framework</ListGroup.Item>
-                        <ListGroup.Item>Slim Framework</ListGroup.Item>
-                        <ListGroup.Item>Linux Mint</ListGroup.Item>
-                    </ListGroup>
-                </Card>
+                <ContributionsPage/>
+            </Tab>
+
+            <Tab className={TabContent}
+                 eventKey="frameworks"
+                 title="Frameworks and Languages">
+                <ul>
+                     <li>Assembly</li>
+                     <li>C, C++</li>
+                     <li>COBOL (it's old but for a language invented in the 50's it's not so bad)</li>
+                     <li>C# (wonderful language)</li>
+                     <li>PHP (In the hands of a seasoned developer this is a powerful language)</li>
+                     <li>Visual FoxPro (Microsoft killed this wonderful product)</li>
+                     <li>Visual Basic (yuck)</li>
+                     <li>SQL MySQL, Oracle and MS-SQL: T-SQL, PL/SQL</li>
+                     <li>Kotlin - a great Java alternative</li>
+                </ul>
             </Tab>
         </Tabs>
     )
