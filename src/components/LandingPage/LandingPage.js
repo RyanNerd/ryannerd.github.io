@@ -5,6 +5,7 @@ import TabContent from "../../styles/tab_content.css";
 import AboutPage from "../About/AboutPage";
 import ContributionsPage from "../Contributions/ContributionsPage";
 import FrameworksPage from "../Frameworks/FrameworksPage";
+import DogPage from "../DogPage/DogPage";
 
 function LandingPage() {
     const [ activeTabKey, setActiveTabKey ] = useState('about');
@@ -33,6 +34,13 @@ function LandingPage() {
                  eventKey="frameworks"
                  title="Frameworks and Languages">
                 <FrameworksPage/>
+            </Tab>
+
+            <Tab className={TabContent}
+                 eventKey="test"
+                 title="Puppies"
+            >
+                <DogPage/>
             </Tab>
         </Tabs>
     )
