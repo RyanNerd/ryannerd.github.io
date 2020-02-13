@@ -1,6 +1,7 @@
 import {useGet} from "../Providers/Frak";
 import React  from "react";
 import Spinner from "react-bootstrap/Spinner";
+import Image from "react-bootstrap/Image";
 
 const DogPage = props => {
     const ImageFetch = props => {
@@ -13,7 +14,7 @@ const DogPage = props => {
         const imageUrl = res.response.message;
         return (
             <div>
-                <img src={imageUrl} alt="avatar" width={400} height="auto" />
+                <Image src={imageUrl} alt="puppy" height="auto" width="400px" rounded/>
             </div>
         );
     };
@@ -26,6 +27,9 @@ const DogPage = props => {
             <ImageFetch/>
             <p>
                 Leave this tab and return to refresh the image.
+            </p>
+            <p>
+                <a href="https://github.com/RyanNerd/ryannerd.github.io/blob/source/src/components/Providers/Frak.js">Fetch React hooks implementation details</a>
             </p>
         </>
     );
