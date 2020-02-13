@@ -1,4 +1,4 @@
-import {useGet} from "../../Providers/Frak";
+import {useGet} from "../Providers/Frak";
 import React  from "react";
 import Spinner from "react-bootstrap/Spinner";
 
