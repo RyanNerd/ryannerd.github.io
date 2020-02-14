@@ -18,7 +18,7 @@ function AboutPage()
                     </Card.Text>
                 </ListGroup.Item>
                 <ListGroup horizontal variant={"flush"}>
-                    <ListGroup.Item><Button variant={"link"} href="mailto:ryan.jentzsch@gmail.com" className="hover-underline-animation">Contact Me</Button></ListGroup.Item>
+                    <ListGroup.Item><Button variant={"link"} href="mailto:ryan.jentzsch@gmail.com" className="hover-underline-animation">Email Me</Button></ListGroup.Item>
                     <ListGroup.Item><Button variant={"link"} href="https://github.com/RyanNerd" className="hover-underline-animation">GitHub Profile</Button></ListGroup.Item>
                     <ListGroup.Item><Button variant={"link"} href="https://stackoverflow.com/users/4323201/ryannerd" className="hover-underline-animation">StackOverflow Reputation</Button></ListGroup.Item>
                 </ListGroup>

@@ -30,7 +30,7 @@ function FrameworksPage()
         </ListGroup>
 
 
-        <ListGroup as="ul" style={{ width: "45rem", marginTop: "25px"}}>
+        <ListGroup as="ul" style={{ width: "30rem", marginTop: "25px"}}>
             <ListGroup.Item as="li" active>
                 <b>Languages</b>
             </ListGroup.Item>
